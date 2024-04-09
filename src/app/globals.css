@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --brand-background: 25, 164, 129;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +26,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/* Clerk styles */
+.cl-formButtonPrimary {
+  font-size: 14px;
+  text-transform: none;
+  background-color: rgb(var(--brand-background));
+  color: white;
+}
+
+.cl-formButtonPrimary:hover,
+.cl-formButtonPrimary:focus,
+.cl-formButtonPrimary:active {
+  background-color: rgba(var(--brand-background), 0.9);
 }

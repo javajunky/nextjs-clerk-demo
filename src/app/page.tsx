@@ -1,6 +1,4 @@
-import Image from "next/image";
-import { SignIn, UserButton } from "@clerk/nextjs";
-import { User } from "@clerk/nextjs/server";
+import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 export default async function Home() {
   return (
@@ -9,7 +7,7 @@ export default async function Home() {
         <div className="flex gap-4">
           <UserButton afterSignOutUrl="/admin" />
           <Link href="/signup" passHref>
-            <button className="p-2 px-4 rounded-lg border border-foreground">
+            <button className="p-2 px-4 rounded-lg border border-slate-800 text-slate-800 dark:border-slate-100 dark:text-slate-100">
               Sign Up
             </button>
           </Link>
